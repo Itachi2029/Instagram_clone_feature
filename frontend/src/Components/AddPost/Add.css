@@ -1,0 +1,107 @@
+/* Add.css */
+.add-post {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 84.8%;
+    margin-left: auto;
+  }
+  
+  .container {
+    height: 70vh; /* Adjust the height as needed */
+    width: 70%; /* Adjust the width as needed */
+    position: relative;
+    background-color: #ffffff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+  
+  .container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .post-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .post-content {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+  
+  .post-image-input {
+    display: none;
+    margin-bottom: 15px;
+  }
+  
+  .post-image-label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .post-image-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.2s;
+  }
+  
+  .post-image-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .post-submit {
+    width: 50%;
+    margin: auto;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: background-color 0.2s;
+  }
+  
+  .post-submit:hover {
+    background-color: rgb(75, 183, 219);
+  }  
+
+
+  .img-preview {
+    height: 320px;
+    width: 50%;
+    align-items: center;
+    margin: auto
+  }
+
+
+  @media (max-width:480px) {
+    .add-post{
+      top:61px;
+      width: 100%;
+    }
+    .container{
+      width: 94%;
+      padding: 6px;
+    }
+    
+  }

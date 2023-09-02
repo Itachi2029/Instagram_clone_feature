@@ -1,0 +1,141 @@
+
+
+.navbar{
+    position: absolute;
+    left: 0;
+}
+
+.profile{
+    width: 81%;
+    margin-right: 0;
+    height: 26vh;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    padding: 11px
+}
+.profile_picture{
+    width: 16%;
+    object-fit:cover;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 1px rgba(248, 241, 241, 0.6);
+    height: 187px;
+}
+
+.user_profile{
+    width: 41%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.user_follow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile_name{
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.profile_post{
+    font-size: 17px;
+    font-weight: 500;
+}
+.border{
+    margin-left: auto;
+    width: 85%;
+    border: 1px solid silver;
+    margin-right: auto;
+}
+
+
+.post_bar{
+    margin-top: 60px;
+    margin-left: auto;
+    display: grid;
+    width: 81%;
+    grid-template-columns: repeat(3, 1fr); /* Each column takes equal space */
+    grid-auto-flow: row; /* Images will move to the next row after first row is filled */
+    gap: 10px; 
+}
+
+.imagi{
+    width: 99%;
+    height: 278px;
+    transition: 0.3s;
+    
+}
+.imagi:hover{
+    
+    border: 1px solid rgb(71, 70, 70);
+}
+
+.pink{
+    background-color: aqua;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+.edi{
+    
+        text-decoration: none;
+        color: black;
+        font-size: 22px;
+        background: beige;
+        border-radius: 5px;
+        
+        width: 127px;
+        text-align: center
+}
+.edi:hover{
+
+    background-color: rgb(86, 86, 255);
+    color: white;
+}
+
+
+@media (max-width:480px) {
+    .profile{
+        margin: 0;
+        margin-top: 78px;
+        height: 18vh;
+        width: 100%;
+        
+       
+    }
+
+    .profile_picture{
+        width: 120px;
+        object-fit:cover;
+        height: 120px;
+    }
+    
+.profile_name{
+    font-size: 21px;
+   
+}
+
+.post_bar{
+    margin-top: 60px;
+    
+   overflow: hidden;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr); /* Each column takes equal space */
+    grid-auto-flow: row; /* Images will move to the next row after first row is filled */
+    gap: 5px; 
+}
+
+.imagi{
+    width: 29vw;
+    height: 14vh;
+    
+    
+}
+
+
+    
+}

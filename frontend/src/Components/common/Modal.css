@@ -1,0 +1,144 @@
+/* General styling for heading */
+
+
+
+h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px; /* Larger font size for the heading */
+    color: black;
+    margin-top: 10px;
+    padding: 5px 0;
+    transition: font-size 0.3s ease-in-out;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Styling for the navigation bar container */
+.navbar {
+   background-color: white;
+  
+    width: 15vw; /* Fixed breadth of 15% of viewport width */
+    height: 100vh;
+    border-right: 1px solid rgb(203, 200, 200);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0; 
+    padding: 0;
+    position: fixed;
+    transition: width 0.3s ease-in-out;
+    overflow-x: hidden;
+}
+
+/* Styling for the navigation menu */
+nav {
+    width: 100%;
+    overflow-y: auto;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/* Styling for individual list items */
+li {
+    margin: 0;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+li p {
+    font-size: 12px;
+    margin: 0;
+    margin-top: 3px;
+    transition: opacity 0.3s ease-in-out;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Icon styles */
+.home,
+.Profile {
+    width: 22px; /* Slightly larger icon size */
+    height: 22px; /* Slightly larger icon size */
+    margin: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Profile {
+    border: 2px solid red;
+    border-radius: 50%;
+}
+
+/* Hover effect for list items */
+li:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        width: 40px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    li p {
+        display: none;
+        opacity: 0;
+    }
+    .home,
+    .Profile {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home,.Profile{
+        width: 26px;
+     height: 26px;
+    }
+
+    h3{
+        display: none;
+    }
+    .navbar {
+        width: 50px;
+        flex-direction: row;
+        background-color: white;
+       top:0;
+       width: 95vw;
+       height: 10vh;
+       border: none;
+    
+   
+  
+   
+    }
+    
+       
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    }
+
+
